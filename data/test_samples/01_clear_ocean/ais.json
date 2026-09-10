@@ -1,0 +1,283 @@
+{
+  "vessels": [
+    {
+      "mmsi": "419011111",
+      "name": "MV COROMANDEL",
+      "vessel_type": "cargo",
+      "flag": "India",
+      "imo": "9111111",
+      "length_m": 155,
+      "beam_m": 25,
+      "draft_m": 8.5,
+      "cargo": "Steel",
+      "track": [
+        {
+          "timestamp": "2026-09-08T12:00:00Z",
+          "lat": 13.8,
+          "lon": 80.5,
+          "speed_knots": 14.6,
+          "heading": 191.9,
+          "course": 190.9
+        },
+        {
+          "timestamp": "2026-09-08T12:30:00Z",
+          "lat": 13.680639,
+          "lon": 80.47402,
+          "speed_knots": 11.9,
+          "heading": 199.3,
+          "course": 194.7
+        },
+        {
+          "timestamp": "2026-09-08T13:00:00Z",
+          "lat": 13.586747,
+          "lon": 80.440142,
+          "speed_knots": 14.7,
+          "heading": 191.2,
+          "course": 191.8
+        },
+        {
+          "timestamp": "2026-09-08T13:30:00Z",
+          "lat": 13.466081,
+          "lon": 80.415587,
+          "speed_knots": 12.8,
+          "heading": 202.3,
+          "course": 198.2
+        },
+        {
+          "timestamp": "2026-09-08T14:00:00Z",
+          "lat": 13.367673,
+          "lon": 80.374082,
+          "speed_knots": 12.7,
+          "heading": 193.1,
+          "course": 195.3
+        },
+        {
+          "timestamp": "2026-09-08T14:30:00Z",
+          "lat": 13.264656,
+          "lon": 80.349491,
+          "speed_knots": 11.9,
+          "heading": 194.1,
+          "course": 192.4
+        },
+        {
+          "timestamp": "2026-09-08T15:00:00Z",
+          "lat": 13.168389,
+          "lon": 80.324588,
+          "speed_knots": 13.0,
+          "heading": 197.9,
+          "course": 195.7
+        },
+        {
+          "timestamp": "2026-09-08T15:30:00Z",
+          "lat": 13.064861,
+          "lon": 80.290232,
+          "speed_knots": 14.1,
+          "heading": 199.5,
+          "course": 200.5
+        },
+        {
+          "timestamp": "2026-09-08T16:00:00Z",
+          "lat": 12.953634,
+          "lon": 80.249798,
+          "speed_knots": 13.9,
+          "heading": 191.6,
+          "course": 191.3
+        },
+        {
+          "timestamp": "2026-09-08T16:30:00Z",
+          "lat": 12.84003,
+          "lon": 80.22592,
+          "speed_knots": 12.1,
+          "heading": 193.7,
+          "course": 194.7
+        },
+        {
+          "timestamp": "2026-09-08T17:00:00Z",
+          "lat": 12.742233,
+          "lon": 80.201551,
+          "speed_knots": 12.3,
+          "heading": 193.0,
+          "course": 191.6
+        },
+        {
+          "timestamp": "2026-09-08T17:30:00Z",
+          "lat": 12.642191,
+          "lon": 80.17785,
+          "speed_knots": 12.2,
+          "heading": 191.6,
+          "course": 191.6
+        }
+      ]
+    },
+    {
+      "mmsi": "419022222",
+      "name": "FV MARINA QUEEN",
+      "vessel_type": "fishing",
+      "flag": "India",
+      "imo": "",
+      "length_m": 18,
+      "beam_m": 5,
+      "draft_m": 2.0,
+      "cargo": "Fish",
+      "track": [
+        {
+          "timestamp": "2026-09-08T13:00:00Z",
+          "lat": 13.55,
+          "lon": 80.9,
+          "speed_knots": 3.2,
+          "heading": 43.3,
+          "course": 39.0
+        },
+        {
+          "timestamp": "2026-09-08T13:30:00Z",
+          "lat": 13.569221,
+          "lon": 80.918641,
+          "speed_knots": 7.3,
+          "heading": 351.2,
+          "course": 349.5
+        },
+        {
+          "timestamp": "2026-09-08T14:00:00Z",
+          "lat": 13.629242,
+          "lon": 80.909076,
+          "speed_knots": 5.0,
+          "heading": 7.6,
+          "course": 5.5
+        },
+        {
+          "timestamp": "2026-09-08T14:30:00Z",
+          "lat": 13.670631,
+          "lon": 80.914791,
+          "speed_knots": 2.2,
+          "heading": 61.5,
+          "course": 66.1
+        },
+        {
+          "timestamp": "2026-09-08T15:00:00Z",
+          "lat": 13.679305,
+          "lon": 80.931262,
+          "speed_knots": 4.1,
+          "heading": 11.5,
+          "course": 12.5
+        },
+        {
+          "timestamp": "2026-09-08T15:30:00Z",
+          "lat": 13.712688,
+          "lon": 80.93823,
+          "speed_knots": 2.8,
+          "heading": 44.4,
+          "course": 46.8
+        },
+        {
+          "timestamp": "2026-09-08T16:00:00Z",
+          "lat": 13.729415,
+          "lon": 80.955107,
+          "speed_knots": 2.5,
+          "heading": 45.3,
+          "course": 43.5
+        },
+        {
+          "timestamp": "2026-09-08T16:30:00Z",
+          "lat": 13.744118,
+          "lon": 80.970387,
+          "speed_knots": 3.7,
+          "heading": 52.7,
+          "course": 50.7
+        }
+      ]
+    },
+    {
+      "mmsi": "563033333",
+      "name": "MV SINGAPORE PRIDE",
+      "vessel_type": "container",
+      "flag": "Singapore",
+      "imo": "9333333",
+      "length_m": 294,
+      "beam_m": 40,
+      "draft_m": 12.5,
+      "cargo": "Containers",
+      "track": [
+        {
+          "timestamp": "2026-09-08T12:00:00Z",
+          "lat": 13.2,
+          "lon": 81.2,
+          "speed_knots": 20.8,
+          "heading": 232.2,
+          "course": 232.4
+        },
+        {
+          "timestamp": "2026-09-08T12:30:00Z",
+          "lat": 13.093664,
+          "lon": 81.059342,
+          "speed_knots": 17.1,
+          "heading": 228.6,
+          "course": 227.9
+        },
+        {
+          "timestamp": "2026-09-08T13:00:00Z",
+          "lat": 12.999149,
+          "lon": 80.949265,
+          "speed_knots": 18.9,
+          "heading": 226.9,
+          "course": 226.8
+        },
+        {
+          "timestamp": "2026-09-08T13:30:00Z",
+          "lat": 12.891248,
+          "lon": 80.831123,
+          "speed_knots": 18.5,
+          "heading": 223.4,
+          "course": 225.2
+        },
+        {
+          "timestamp": "2026-09-08T14:00:00Z",
+          "lat": 12.779032,
+          "lon": 80.722194,
+          "speed_knots": 19.9,
+          "heading": 238.5,
+          "course": 238.6
+        },
+        {
+          "timestamp": "2026-09-08T14:30:00Z",
+          "lat": 12.69249,
+          "lon": 80.577161,
+          "speed_knots": 18.6,
+          "heading": 227.3,
+          "course": 224.2
+        },
+        {
+          "timestamp": "2026-09-08T15:00:00Z",
+          "lat": 12.587235,
+          "lon": 80.460398,
+          "speed_knots": 20.0,
+          "heading": 224.5,
+          "course": 222.1
+        },
+        {
+          "timestamp": "2026-09-08T15:30:00Z",
+          "lat": 12.468325,
+          "lon": 80.340745,
+          "speed_knots": 18.8,
+          "heading": 237.4,
+          "course": 237.9
+        },
+        {
+          "timestamp": "2026-09-08T16:00:00Z",
+          "lat": 12.383923,
+          "lon": 80.205465,
+          "speed_knots": 18.0,
+          "heading": 226.4,
+          "course": 227.7
+        },
+        {
+          "timestamp": "2026-09-08T16:30:00Z",
+          "lat": 12.280571,
+          "lon": 80.094258,
+          "speed_knots": 18.8,
+          "heading": 226.2,
+          "course": 225.7
+        }
+      ]
+    }
+  ]
+}

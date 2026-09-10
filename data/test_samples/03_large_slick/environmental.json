@@ -1,0 +1,19 @@
+{
+  "location_name": "Arabian Sea, west of Mumbai",
+  "slick_centroid_lat": 18.82,
+  "slick_centroid_lon": 71.48,
+  "acquisition_time": "2026-09-09T14:30:00Z",
+  "satellite": "Sentinel-1A",
+  "mode": "IW",
+  "polarization": "VV",
+  "resolution_m": 10,
+  "region_size_km": 20,
+  "wind_speed_ms": 7.5,
+  "wind_direction_deg": 225,
+  "current_speed_ms": 0.35,
+  "current_direction_deg": 190,
+  "sea_state": "moderate",
+  "wave_height_m": 1.2,
+  "source_wind": "ERA5 Reanalysis",
+  "source_current": "CMEMS Global Ocean Physics"
+}

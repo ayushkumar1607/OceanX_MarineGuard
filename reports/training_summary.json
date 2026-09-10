@@ -1,0 +1,22 @@
+{
+  "model_name": "U-Net (Lightweight)",
+  "total_parameters": 1942289,
+  "model_size_mb": 7.41,
+  "training_samples": 298,
+  "validation_samples": 52,
+  "epochs_completed": 8,
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "optimizer": "Adam",
+  "loss_function": "BCE + Dice",
+  "device": "CPU",
+  "training_time_sec": 252.26,
+  "best_epoch": 8,
+  "best_val_loss": 0.2808,
+  "best_val_iou": 0.815,
+  "best_val_dice": 0.8981,
+  "best_val_f1": 0.8981,
+  "final_val_iou": 0.815,
+  "final_val_dice": 0.8981,
+  "final_val_f1": 0.8981
+}

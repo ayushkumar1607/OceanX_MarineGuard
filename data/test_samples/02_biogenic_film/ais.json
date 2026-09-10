@@ -1,0 +1,267 @@
+{
+  "vessels": [
+    {
+      "mmsi": "419033333",
+      "name": "MV ARABIAN STAR",
+      "vessel_type": "cargo",
+      "flag": "Panama",
+      "imo": "9233333",
+      "length_m": 180,
+      "beam_m": 30,
+      "draft_m": 10.0,
+      "cargo": "General",
+      "track": [
+        {
+          "timestamp": "2026-09-08T06:00:00Z",
+          "lat": 15.2,
+          "lon": 72.1,
+          "speed_knots": 12.1,
+          "heading": 192.5,
+          "course": 190.5
+        },
+        {
+          "timestamp": "2026-09-08T06:30:00Z",
+          "lat": 15.101853,
+          "lon": 72.077463,
+          "speed_knots": 12.7,
+          "heading": 187.9,
+          "course": 184.7
+        },
+        {
+          "timestamp": "2026-09-08T07:00:00Z",
+          "lat": 14.996966,
+          "lon": 72.06238,
+          "speed_knots": 11.4,
+          "heading": 193.0,
+          "course": 193.7
+        },
+        {
+          "timestamp": "2026-09-08T07:30:00Z",
+          "lat": 14.904686,
+          "lon": 72.040346,
+          "speed_knots": 10.9,
+          "heading": 193.1,
+          "course": 192.9
+        },
+        {
+          "timestamp": "2026-09-08T08:00:00Z",
+          "lat": 14.816504,
+          "lon": 72.019131,
+          "speed_knots": 12.4,
+          "heading": 191.7,
+          "course": 189.3
+        },
+        {
+          "timestamp": "2026-09-08T08:30:00Z",
+          "lat": 14.714989,
+          "lon": 71.997469,
+          "speed_knots": 12.4,
+          "heading": 187.0,
+          "course": 190.1
+        },
+        {
+          "timestamp": "2026-09-08T09:00:00Z",
+          "lat": 14.612713,
+          "lon": 71.984556,
+          "speed_knots": 12.7,
+          "heading": 190.2,
+          "course": 188.3
+        },
+        {
+          "timestamp": "2026-09-08T09:30:00Z",
+          "lat": 14.508259,
+          "lon": 71.965083,
+          "speed_knots": 12.1,
+          "heading": 190.8,
+          "course": 188.4
+        },
+        {
+          "timestamp": "2026-09-08T10:00:00Z",
+          "lat": 14.409477,
+          "lon": 71.945628,
+          "speed_knots": 14.2,
+          "heading": 192.0,
+          "course": 195.4
+        },
+        {
+          "timestamp": "2026-09-08T10:30:00Z",
+          "lat": 14.293402,
+          "lon": 71.92023,
+          "speed_knots": 10.9,
+          "heading": 198.2,
+          "course": 195.5
+        }
+      ]
+    },
+    {
+      "mmsi": "419044444",
+      "name": "FV KANYA",
+      "vessel_type": "fishing",
+      "flag": "India",
+      "imo": "",
+      "length_m": 20,
+      "beam_m": 5,
+      "draft_m": 2.2,
+      "cargo": "Fish",
+      "track": [
+        {
+          "timestamp": "2026-09-08T06:00:00Z",
+          "lat": 14.9,
+          "lon": 72.15,
+          "speed_knots": 3.7,
+          "heading": 76.8,
+          "course": 81.6
+        },
+        {
+          "timestamp": "2026-09-08T06:30:00Z",
+          "lat": 14.906994,
+          "lon": 72.180773,
+          "speed_knots": 2.6,
+          "heading": 94.4,
+          "course": 97.5
+        },
+        {
+          "timestamp": "2026-09-08T07:00:00Z",
+          "lat": 14.905322,
+          "lon": 72.20334,
+          "speed_knots": 1.6,
+          "heading": 66.3,
+          "course": 66.7
+        },
+        {
+          "timestamp": "2026-09-08T07:30:00Z",
+          "lat": 14.9108,
+          "lon": 72.216278,
+          "speed_knots": 2.5,
+          "heading": 42.3,
+          "course": 41.9
+        },
+        {
+          "timestamp": "2026-09-08T08:00:00Z",
+          "lat": 14.926261,
+          "lon": 72.230831,
+          "speed_knots": 2.5,
+          "heading": 114.1,
+          "course": 110.8
+        },
+        {
+          "timestamp": "2026-09-08T08:30:00Z",
+          "lat": 14.917862,
+          "lon": 72.250226,
+          "speed_knots": 1.9,
+          "heading": 136.1,
+          "course": 139.8
+        },
+        {
+          "timestamp": "2026-09-08T09:00:00Z",
+          "lat": 14.906151,
+          "lon": 72.261906,
+          "speed_knots": 0.7,
+          "heading": 115.8,
+          "course": 113.8
+        },
+        {
+          "timestamp": "2026-09-08T09:30:00Z",
+          "lat": 14.903489,
+          "lon": 72.267606,
+          "speed_knots": 1.7,
+          "heading": 55.1,
+          "course": 54.3
+        }
+      ]
+    },
+    {
+      "mmsi": "419055555",
+      "name": "MT GULF SPIRIT",
+      "vessel_type": "tanker",
+      "flag": "Liberia",
+      "imo": "9345555",
+      "length_m": 220,
+      "beam_m": 35,
+      "draft_m": 12.0,
+      "cargo": "Crude",
+      "track": [
+        {
+          "timestamp": "2026-09-08T06:00:00Z",
+          "lat": 15.1,
+          "lon": 71.9,
+          "speed_knots": 9.7,
+          "heading": 213.6,
+          "course": 214.1
+        },
+        {
+          "timestamp": "2026-09-08T06:30:00Z",
+          "lat": 15.032716,
+          "lon": 71.853634,
+          "speed_knots": 9.1,
+          "heading": 197.6,
+          "course": 199.4
+        },
+        {
+          "timestamp": "2026-09-08T07:00:00Z",
+          "lat": 14.960334,
+          "lon": 71.829916,
+          "speed_knots": 11.1,
+          "heading": 202.4,
+          "course": 205.7
+        },
+        {
+          "timestamp": "2026-09-08T07:30:00Z",
+          "lat": 14.87453,
+          "lon": 71.793271,
+          "speed_knots": 9.6,
+          "heading": 223.2,
+          "course": 224.4
+        },
+        {
+          "timestamp": "2026-09-08T08:00:00Z",
+          "lat": 14.81629,
+          "lon": 71.736785,
+          "speed_knots": 9.7,
+          "heading": 216.2,
+          "course": 216.4
+        },
+        {
+          "timestamp": "2026-09-08T08:30:00Z",
+          "lat": 14.751222,
+          "lon": 71.68756,
+          "speed_knots": 10.1,
+          "heading": 210.4,
+          "course": 210.1
+        },
+        {
+          "timestamp": "2026-09-08T09:00:00Z",
+          "lat": 14.678325,
+          "lon": 71.643382,
+          "speed_knots": 10.6,
+          "heading": 214.1,
+          "course": 214.8
+        },
+        {
+          "timestamp": "2026-09-08T09:30:00Z",
+          "lat": 14.604824,
+          "lon": 71.592047,
+          "speed_knots": 11.8,
+          "heading": 203.2,
+          "course": 202.3
+        },
+        {
+          "timestamp": "2026-09-08T10:00:00Z",
+          "lat": 14.51426,
+          "lon": 71.551917,
+          "speed_knots": 10.8,
+          "heading": 204.1,
+          "course": 207.2
+        },
+        {
+          "timestamp": "2026-09-08T10:30:00Z",
+          "lat": 14.431839,
+          "lon": 71.513816,
+          "speed_knots": 10.7,
+          "heading": 209.1,
+          "course": 210.2
+        }
+      ]
+    }
+  ]
+}

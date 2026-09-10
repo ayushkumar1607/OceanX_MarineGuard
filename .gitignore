@@ -1,0 +1,37 @@
+# ─── Python ───
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+
+# ─── Virtual Environments ───
+venv/
+env/
+ENV/
+.venv/
+
+# ─── IDE / OS ───
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ─── Environment / Secrets ───
+.env
+.env.local
+*.key
+
+# ─── Large binaries & checkpoints ───
+models/unet_checkpoint.pth
+reports/live/
+reports/tensorboard/
+
+# ─── Streamlit / Misc cache ───
+.streamlit/
+*.log

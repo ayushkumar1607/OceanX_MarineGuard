@@ -1,0 +1,459 @@
+{
+  "vessels": [
+    {
+      "mmsi": "419009001",
+      "name": "MT KOCHI TRADER",
+      "vessel_type": "tanker",
+      "flag": "India",
+      "imo": "9456789",
+      "length_m": 200,
+      "beam_m": 32,
+      "draft_m": 12.5,
+      "cargo": "Refined Products",
+      "track": [
+        {
+          "timestamp": "2026-09-11T04:00:00Z",
+          "lat": 10.2,
+          "lon": 75.3,
+          "speed_knots": 14.4,
+          "heading": 193.6,
+          "course": 192.6
+        },
+        {
+          "timestamp": "2026-09-11T04:30:00Z",
+          "lat": 10.083437,
+          "lon": 75.271425,
+          "speed_knots": 3.4,
+          "heading": 195.0,
+          "course": 194.3
+        },
+        {
+          "timestamp": "2026-09-11T05:00:00Z",
+          "lat": 10.056303,
+          "lon": 75.264062,
+          "speed_knots": 8.7,
+          "heading": 196.6,
+          "course": 197.4
+        },
+        {
+          "timestamp": "2026-09-11T05:30:00Z",
+          "lat": 9.987074,
+          "lon": 75.243137,
+          "speed_knots": 7.3,
+          "heading": 190.6,
+          "course": 189.6
+        },
+        {
+          "timestamp": "2026-09-11T06:00:00Z",
+          "lat": 9.926912,
+          "lon": 75.231741,
+          "speed_knots": 11.7,
+          "heading": 197.8,
+          "course": 195.2
+        },
+        {
+          "timestamp": "2026-09-11T06:30:00Z",
+          "lat": 9.83379,
+          "lon": 75.201386,
+          "speed_knots": 7.2,
+          "heading": 198.7,
+          "course": 201.8
+        },
+        {
+          "timestamp": "2026-09-11T08:00:00Z",
+          "lat": 9.622856,
+          "lon": 75.14006,
+          "speed_knots": 11.6,
+          "heading": 195.4,
+          "course": 196.8
+        },
+        {
+          "timestamp": "2026-09-11T08:30:00Z",
+          "lat": 9.529745,
+          "lon": 75.114111,
+          "speed_knots": 8.4,
+          "heading": 194.1,
+          "course": 193.0
+        },
+        {
+          "timestamp": "2026-09-11T09:00:00Z",
+          "lat": 9.461835,
+          "lon": 75.096806,
+          "speed_knots": 9.5,
+          "heading": 192.6,
+          "course": 192.2
+        },
+        {
+          "timestamp": "2026-09-11T09:30:00Z",
+          "lat": 9.384571,
+          "lon": 75.079348,
+          "speed_knots": 9.0,
+          "heading": 195.4,
+          "course": 195.6
+        },
+        {
+          "timestamp": "2026-09-11T10:00:00Z",
+          "lat": 9.31181,
+          "lon": 75.058976,
+          "speed_knots": 10.7,
+          "heading": 202.0,
+          "course": 198.9
+        },
+        {
+          "timestamp": "2026-09-11T10:30:00Z",
+          "lat": 9.228739,
+          "lon": 75.02495,
+          "speed_knots": 13.2,
+          "heading": 193.8,
+          "course": 191.3
+        },
+        {
+          "timestamp": "2026-09-11T11:00:00Z",
+          "lat": 9.121488,
+          "lon": 74.998241,
+          "speed_knots": 9.6,
+          "heading": 195.5,
+          "course": 197.6
+        },
+        {
+          "timestamp": "2026-09-11T11:30:00Z",
+          "lat": 9.044549,
+          "lon": 74.976695,
+          "speed_knots": 7.3,
+          "heading": 196.1,
+          "course": 196.3
+        },
+        {
+          "timestamp": "2026-09-11T12:00:00Z",
+          "lat": 8.985667,
+          "lon": 74.959503,
+          "speed_knots": 5.8,
+          "heading": 189.1,
+          "course": 190.3
+        },
+        {
+          "timestamp": "2026-09-11T12:30:00Z",
+          "lat": 8.937971,
+          "lon": 74.951795,
+          "speed_knots": 11.7,
+          "heading": 200.4,
+          "course": 201.5
+        }
+      ]
+    },
+    {
+      "mmsi": "636020000",
+      "name": "MT PERSIAN STAR",
+      "vessel_type": "tanker",
+      "flag": "Liberia",
+      "imo": "9845678",
+      "length_m": 244,
+      "beam_m": 42,
+      "draft_m": 15.0,
+      "cargo": "Refined Products",
+      "track": [
+        {
+          "timestamp": "2026-09-11T04:00:00Z",
+          "lat": 10.0,
+          "lon": 75.8,
+          "speed_knots": 12.5,
+          "heading": 256.6,
+          "course": 257.1
+        },
+        {
+          "timestamp": "2026-09-11T04:30:00Z",
+          "lat": 9.975873,
+          "lon": 75.697228,
+          "speed_knots": 10.3,
+          "heading": 263.8,
+          "course": 260.7
+        },
+        {
+          "timestamp": "2026-09-11T05:00:00Z",
+          "lat": 9.966543,
+          "lon": 75.610507,
+          "speed_knots": 12.0,
+          "heading": 259.4,
+          "course": 257.8
+        },
+        {
+          "timestamp": "2026-09-11T05:30:00Z",
+          "lat": 9.948118,
+          "lon": 75.510563,
+          "speed_knots": 14.9,
+          "heading": 257.0,
+          "course": 258.0
+        },
+        {
+          "timestamp": "2026-09-11T06:00:00Z",
+          "lat": 9.920232,
+          "lon": 75.387837,
+          "speed_knots": 13.1,
+          "heading": 253.9,
+          "course": 256.6
+        },
+        {
+          "timestamp": "2026-09-11T06:30:00Z",
+          "lat": 9.889979,
+          "lon": 75.281275,
+          "speed_knots": 11.9,
+          "heading": 265.1,
+          "course": 263.2
+        },
+        {
+          "timestamp": "2026-09-11T07:00:00Z",
+          "lat": 9.881451,
+          "lon": 75.181067,
+          "speed_knots": 11.0,
+          "heading": 266.0,
+          "course": 267.1
+        },
+        {
+          "timestamp": "2026-09-11T07:30:00Z",
+          "lat": 9.875145,
+          "lon": 75.088392,
+          "speed_knots": 12.1,
+          "heading": 263.2,
+          "course": 264.3
+        },
+        {
+          "timestamp": "2026-09-11T08:00:00Z",
+          "lat": 9.863161,
+          "lon": 74.986328,
+          "speed_knots": 10.8,
+          "heading": 248.9,
+          "course": 245.6
+        },
+        {
+          "timestamp": "2026-09-11T08:30:00Z",
+          "lat": 9.830639,
+          "lon": 74.900639,
+          "speed_knots": 10.2,
+          "heading": 248.9,
+          "course": 247.6
+        },
+        {
+          "timestamp": "2026-09-11T09:00:00Z",
+          "lat": 9.79998,
+          "lon": 74.819979,
+          "speed_knots": 11.5,
+          "heading": 259.8,
+          "course": 260.2
+        },
+        {
+          "timestamp": "2026-09-11T09:30:00Z",
+          "lat": 9.78304,
+          "lon": 74.7244,
+          "speed_knots": 11.6,
+          "heading": 258.7,
+          "course": 258.9
+        },
+        {
+          "timestamp": "2026-09-11T10:00:00Z",
+          "lat": 9.764103,
+          "lon": 74.62797,
+          "speed_knots": 11.0,
+          "heading": 256.4,
+          "course": 256.5
+        },
+        {
+          "timestamp": "2026-09-11T10:30:00Z",
+          "lat": 9.742567,
+          "lon": 74.537438,
+          "speed_knots": 11.3,
+          "heading": 257.1,
+          "course": 256.9
+        },
+        {
+          "timestamp": "2026-09-11T11:00:00Z",
+          "lat": 9.721546,
+          "lon": 74.444013,
+          "speed_knots": 13.3,
+          "heading": 261.6,
+          "course": 260.9
+        },
+        {
+          "timestamp": "2026-09-11T11:30:00Z",
+          "lat": 9.705281,
+          "lon": 74.332358,
+          "speed_knots": 11.4,
+          "heading": 259.4,
+          "course": 263.9
+        },
+        {
+          "timestamp": "2026-09-11T12:00:00Z",
+          "lat": 9.687806,
+          "lon": 74.237395,
+          "speed_knots": 8.9,
+          "heading": 262.7,
+          "course": 263.1
+        },
+        {
+          "timestamp": "2026-09-11T12:30:00Z",
+          "lat": 9.678391,
+          "lon": 74.163089,
+          "speed_knots": 12.9,
+          "heading": 254.3,
+          "course": 258.5
+        }
+      ]
+    },
+    {
+      "mmsi": "419077777",
+      "name": "MV MALABAR",
+      "vessel_type": "cargo",
+      "flag": "India",
+      "imo": "9567890",
+      "length_m": 150,
+      "beam_m": 24,
+      "draft_m": 8.0,
+      "cargo": "General",
+      "track": [
+        {
+          "timestamp": "2026-09-11T04:00:00Z",
+          "lat": 9.7,
+          "lon": 75.9,
+          "speed_knots": 10.3,
+          "heading": 148.8,
+          "course": 148.7
+        },
+        {
+          "timestamp": "2026-09-11T04:30:00Z",
+          "lat": 9.626614,
+          "lon": 75.945134,
+          "speed_knots": 11.5,
+          "heading": 151.7,
+          "course": 152.8
+        },
+        {
+          "timestamp": "2026-09-11T05:00:00Z",
+          "lat": 9.542478,
+          "lon": 75.991023,
+          "speed_knots": 12.4,
+          "heading": 149.3,
+          "course": 152.3
+        },
+        {
+          "timestamp": "2026-09-11T05:30:00Z",
+          "lat": 9.453882,
+          "lon": 76.044339,
+          "speed_knots": 10.0,
+          "heading": 141.1,
+          "course": 138.5
+        },
+        {
+          "timestamp": "2026-09-11T06:00:00Z",
+          "lat": 9.389294,
+          "lon": 76.097248,
+          "speed_knots": 11.6,
+          "heading": 143.8,
+          "course": 145.6
+        },
+        {
+          "timestamp": "2026-09-11T06:30:00Z",
+          "lat": 9.31147,
+          "lon": 76.155002,
+          "speed_knots": 11.3,
+          "heading": 145.6,
+          "course": 149.9
+        },
+        {
+          "timestamp": "2026-09-11T07:00:00Z",
+          "lat": 9.233535,
+          "lon": 76.208992,
+          "speed_knots": 11.6,
+          "heading": 144.9,
+          "course": 142.9
+        },
+        {
+          "timestamp": "2026-09-11T07:30:00Z",
+          "lat": 9.154351,
+          "lon": 76.265432,
+          "speed_knots": 12.2,
+          "heading": 149.8,
+          "course": 147.6
+        },
+        {
+          "timestamp": "2026-09-11T08:00:00Z",
+          "lat": 9.066487,
+          "lon": 76.317292,
+          "speed_knots": 10.9,
+          "heading": 146.2,
+          "course": 142.9
+        },
+        {
+          "timestamp": "2026-09-11T08:30:00Z",
+          "lat": 8.991248,
+          "lon": 76.368308,
+          "speed_knots": 10.7,
+          "heading": 152.0,
+          "course": 148.8
+        },
+        {
+          "timestamp": "2026-09-11T09:00:00Z",
+          "lat": 8.912275,
+          "lon": 76.410818,
+          "speed_knots": 11.5,
+          "heading": 154.5,
+          "course": 153.2
+        },
+        {
+          "timestamp": "2026-09-11T09:30:00Z",
+          "lat": 8.825778,
+          "lon": 76.452637,
+          "speed_knots": 10.5,
+          "heading": 146.1,
+          "course": 147.1
+        },
+        {
+          "timestamp": "2026-09-11T10:00:00Z",
+          "lat": 8.752764,
+          "lon": 76.502302,
+          "speed_knots": 11.4,
+          "heading": 137.4,
+          "course": 135.9
+        },
+        {
+          "timestamp": "2026-09-11T10:30:00Z",
+          "lat": 8.682736,
+          "lon": 76.567362,
+          "speed_knots": 11.1,
+          "heading": 143.4,
+          "course": 145.7
+        },
+        {
+          "timestamp": "2026-09-11T11:00:00Z",
+          "lat": 8.608374,
+          "lon": 76.623189,
+          "speed_knots": 10.7,
+          "heading": 143.1,
+          "course": 146.8
+        },
+        {
+          "timestamp": "2026-09-11T11:30:00Z",
+          "lat": 8.537093,
+          "lon": 76.677211,
+          "speed_knots": 10.9,
+          "heading": 140.1,
+          "course": 140.1
+        },
+        {
+          "timestamp": "2026-09-11T12:00:00Z",
+          "lat": 8.467217,
+          "lon": 76.736283,
+          "speed_knots": 10.8,
+          "heading": 148.6,
+          "course": 149.5
+        },
+        {
+          "timestamp": "2026-09-11T12:30:00Z",
+          "lat": 8.390583,
+          "lon": 76.783651,
+          "speed_knots": 10.7,
+          "heading": 143.1,
+          "course": 142.0
+        }
+      ]
+    }
+  ]
+}

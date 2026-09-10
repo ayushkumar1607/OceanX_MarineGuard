@@ -1,0 +1,19 @@
+{
+  "location_name": "Bay of Bengal near Paradip",
+  "slick_centroid_lat": 20.3,
+  "slick_centroid_lon": 86.7,
+  "acquisition_time": "2026-09-12T07:30:00Z",
+  "satellite": "Sentinel-1B",
+  "mode": "IW",
+  "polarization": "VV",
+  "resolution_m": 10,
+  "region_size_km": 15,
+  "wind_speed_ms": 4.5,
+  "wind_direction_deg": 220,
+  "current_speed_ms": 0.2,
+  "current_direction_deg": 200,
+  "sea_state": "slight",
+  "wave_height_m": 0.6,
+  "source_wind": "ERA5 Reanalysis",
+  "source_current": "CMEMS Global Ocean Physics"
+}

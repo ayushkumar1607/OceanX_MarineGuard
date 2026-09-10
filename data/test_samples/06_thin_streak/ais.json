@@ -1,0 +1,395 @@
+{
+  "vessels": [
+    {
+      "mmsi": "419055001",
+      "name": "MT ODISHA TRADER",
+      "vessel_type": "tanker",
+      "flag": "India",
+      "imo": "9650001",
+      "length_m": 170,
+      "beam_m": 28,
+      "draft_m": 10.0,
+      "cargo": "Fuel Oil",
+      "track": [
+        {
+          "timestamp": "2026-09-12T03:00:00Z",
+          "lat": 20.6,
+          "lon": 86.5,
+          "speed_knots": 9.1,
+          "heading": 211.0,
+          "course": 210.7
+        },
+        {
+          "timestamp": "2026-09-12T03:30:00Z",
+          "lat": 20.535042,
+          "lon": 86.458401,
+          "speed_knots": 9.2,
+          "heading": 202.2,
+          "course": 203.5
+        },
+        {
+          "timestamp": "2026-09-12T04:00:00Z",
+          "lat": 20.464293,
+          "lon": 86.427564,
+          "speed_knots": 10.0,
+          "heading": 202.0,
+          "course": 201.3
+        },
+        {
+          "timestamp": "2026-09-12T04:30:00Z",
+          "lat": 20.38686,
+          "lon": 86.394236,
+          "speed_knots": 8.4,
+          "heading": 204.0,
+          "course": 204.9
+        },
+        {
+          "timestamp": "2026-09-12T05:00:00Z",
+          "lat": 20.323206,
+          "lon": 86.363976,
+          "speed_knots": 9.6,
+          "heading": 194.5,
+          "course": 192.5
+        },
+        {
+          "timestamp": "2026-09-12T06:30:00Z",
+          "lat": 20.078845,
+          "lon": 86.275611,
+          "speed_knots": 8.4,
+          "heading": 194.2,
+          "course": 192.1
+        },
+        {
+          "timestamp": "2026-09-12T07:00:00Z",
+          "lat": 20.010612,
+          "lon": 86.25729,
+          "speed_knots": 9.9,
+          "heading": 197.3,
+          "course": 194.6
+        },
+        {
+          "timestamp": "2026-09-12T07:30:00Z",
+          "lat": 19.931903,
+          "lon": 86.231163,
+          "speed_knots": 9.2,
+          "heading": 204.5,
+          "course": 207.2
+        },
+        {
+          "timestamp": "2026-09-12T08:00:00Z",
+          "lat": 19.861821,
+          "lon": 86.197245,
+          "speed_knots": 11.5,
+          "heading": 205.6,
+          "course": 204.0
+        },
+        {
+          "timestamp": "2026-09-12T08:30:00Z",
+          "lat": 19.775604,
+          "lon": 86.15327,
+          "speed_knots": 9.1,
+          "heading": 205.4,
+          "course": 204.3
+        },
+        {
+          "timestamp": "2026-09-12T09:00:00Z",
+          "lat": 19.707264,
+          "lon": 86.118823,
+          "speed_knots": 9.7,
+          "heading": 205.2,
+          "course": 201.7
+        },
+        {
+          "timestamp": "2026-09-12T09:30:00Z",
+          "lat": 19.634218,
+          "lon": 86.082316,
+          "speed_knots": 9.1,
+          "heading": 205.7,
+          "course": 207.0
+        },
+        {
+          "timestamp": "2026-09-12T10:00:00Z",
+          "lat": 19.565669,
+          "lon": 86.047313,
+          "speed_knots": 9.3,
+          "heading": 199.9,
+          "course": 204.1
+        },
+        {
+          "timestamp": "2026-09-12T10:30:00Z",
+          "lat": 19.49268,
+          "lon": 86.019249,
+          "speed_knots": 9.0,
+          "heading": 192.0,
+          "course": 191.0
+        }
+      ]
+    },
+    {
+      "mmsi": "419066002",
+      "name": "MV PARADIP EXPRESS",
+      "vessel_type": "cargo",
+      "flag": "India",
+      "imo": "9650002",
+      "length_m": 155,
+      "beam_m": 25,
+      "draft_m": 9.0,
+      "cargo": "Iron Ore",
+      "track": [
+        {
+          "timestamp": "2026-09-12T03:00:00Z",
+          "lat": 20.5,
+          "lon": 86.9,
+          "speed_knots": 12.2,
+          "heading": 238.3,
+          "course": 237.1
+        },
+        {
+          "timestamp": "2026-09-12T03:30:00Z",
+          "lat": 20.446424,
+          "lon": 86.807428,
+          "speed_knots": 11.6,
+          "heading": 237.0,
+          "course": 236.5
+        },
+        {
+          "timestamp": "2026-09-12T04:00:00Z",
+          "lat": 20.393713,
+          "lon": 86.720888,
+          "speed_knots": 13.0,
+          "heading": 242.9,
+          "course": 243.4
+        },
+        {
+          "timestamp": "2026-09-12T04:30:00Z",
+          "lat": 20.344181,
+          "lon": 86.617638,
+          "speed_knots": 10.5,
+          "heading": 232.3,
+          "course": 232.8
+        },
+        {
+          "timestamp": "2026-09-12T05:00:00Z",
+          "lat": 20.290373,
+          "lon": 86.543524,
+          "speed_knots": 12.0,
+          "heading": 234.9,
+          "course": 235.1
+        },
+        {
+          "timestamp": "2026-09-12T05:30:00Z",
+          "lat": 20.232843,
+          "lon": 86.456219,
+          "speed_knots": 10.8,
+          "heading": 247.8,
+          "course": 245.9
+        },
+        {
+          "timestamp": "2026-09-12T06:00:00Z",
+          "lat": 20.198743,
+          "lon": 86.367282,
+          "speed_knots": 12.5,
+          "heading": 239.3,
+          "course": 240.3
+        },
+        {
+          "timestamp": "2026-09-12T06:30:00Z",
+          "lat": 20.145313,
+          "lon": 86.271621,
+          "speed_knots": 13.3,
+          "heading": 247.8,
+          "course": 250.3
+        },
+        {
+          "timestamp": "2026-09-12T07:00:00Z",
+          "lat": 20.103244,
+          "lon": 86.161887,
+          "speed_knots": 12.9,
+          "heading": 235.8,
+          "course": 237.8
+        },
+        {
+          "timestamp": "2026-09-12T07:30:00Z",
+          "lat": 20.042708,
+          "lon": 86.067084,
+          "speed_knots": 11.0,
+          "heading": 240.9,
+          "course": 240.1
+        },
+        {
+          "timestamp": "2026-09-12T08:00:00Z",
+          "lat": 19.998188,
+          "lon": 85.981934,
+          "speed_knots": 14.0,
+          "heading": 249.6,
+          "course": 247.5
+        },
+        {
+          "timestamp": "2026-09-12T08:30:00Z",
+          "lat": 19.957515,
+          "lon": 85.865662,
+          "speed_knots": 11.5,
+          "heading": 236.8,
+          "course": 236.9
+        },
+        {
+          "timestamp": "2026-09-12T09:00:00Z",
+          "lat": 19.904872,
+          "lon": 85.780185,
+          "speed_knots": 12.5,
+          "heading": 244.2,
+          "course": 241.8
+        },
+        {
+          "timestamp": "2026-09-12T09:30:00Z",
+          "lat": 19.859355,
+          "lon": 85.67996,
+          "speed_knots": 12.4,
+          "heading": 244.7,
+          "course": 244.0
+        },
+        {
+          "timestamp": "2026-09-12T10:00:00Z",
+          "lat": 19.815255,
+          "lon": 85.580743,
+          "speed_knots": 12.5,
+          "heading": 239.8,
+          "course": 240.6
+        },
+        {
+          "timestamp": "2026-09-12T10:30:00Z",
+          "lat": 19.762903,
+          "lon": 85.485326,
+          "speed_knots": 11.3,
+          "heading": 240.9,
+          "course": 241.9
+        }
+      ]
+    },
+    {
+      "mmsi": "419077003",
+      "name": "FV SEA PEARL",
+      "vessel_type": "fishing",
+      "flag": "India",
+      "imo": "",
+      "length_m": 22,
+      "beam_m": 6,
+      "draft_m": 2.5,
+      "cargo": "Fish",
+      "track": [
+        {
+          "timestamp": "2026-09-12T03:00:00Z",
+          "lat": 20.2,
+          "lon": 86.8,
+          "speed_knots": 5.8,
+          "heading": 66.9,
+          "course": 67.6
+        },
+        {
+          "timestamp": "2026-09-12T03:30:00Z",
+          "lat": 20.218913,
+          "lon": 86.84715,
+          "speed_knots": 0.5,
+          "heading": 22.0,
+          "course": 23.2
+        },
+        {
+          "timestamp": "2026-09-12T04:00:00Z",
+          "lat": 20.222779,
+          "lon": 86.848817,
+          "speed_knots": 5.9,
+          "heading": 25.8,
+          "course": 26.8
+        },
+        {
+          "timestamp": "2026-09-12T04:30:00Z",
+          "lat": 20.266952,
+          "lon": 86.871533,
+          "speed_knots": 4.8,
+          "heading": 71.3,
+          "course": 70.3
+        },
+        {
+          "timestamp": "2026-09-12T05:00:00Z",
+          "lat": 20.279811,
+          "lon": 86.912082,
+          "speed_knots": 2.4,
+          "heading": 30.5,
+          "course": 28.0
+        },
+        {
+          "timestamp": "2026-09-12T05:30:00Z",
+          "lat": 20.297174,
+          "lon": 86.922994,
+          "speed_knots": 4.5,
+          "heading": 58.5,
+          "course": 61.6
+        },
+        {
+          "timestamp": "2026-09-12T06:00:00Z",
+          "lat": 20.316777,
+          "lon": 86.957044,
+          "speed_knots": 6.1,
+          "heading": 74.2,
+          "course": 73.9
+        },
+        {
+          "timestamp": "2026-09-12T06:30:00Z",
+          "lat": 20.330618,
+          "lon": 87.009287,
+          "speed_knots": 0.5,
+          "heading": 99.2,
+          "course": 101.9
+        },
+        {
+          "timestamp": "2026-09-12T07:00:00Z",
+          "lat": 20.329951,
+          "lon": 87.013678,
+          "speed_knots": 3.5,
+          "heading": 55.4,
+          "course": 55.2
+        },
+        {
+          "timestamp": "2026-09-12T07:30:00Z",
+          "lat": 20.346574,
+          "lon": 87.039425,
+          "speed_knots": 7.1,
+          "heading": 64.5,
+          "course": 60.4
+        },
+        {
+          "timestamp": "2026-09-12T08:00:00Z",
+          "lat": 20.372111,
+          "lon": 87.096555,
+          "speed_knots": 2.2,
+          "heading": 21.3,
+          "course": 23.2
+        },
+        {
+          "timestamp": "2026-09-12T08:30:00Z",
+          "lat": 20.389431,
+          "lon": 87.103774,
+          "speed_knots": 8.1,
+          "heading": 27.3,
+          "course": 24.1
+        },
+        {
+          "timestamp": "2026-09-12T09:00:00Z",
+          "lat": 20.449636,
+          "lon": 87.136906,
+          "speed_knots": 5.1,
+          "heading": 5.7,
+          "course": 6.4
+        },
+        {
+          "timestamp": "2026-09-12T09:30:00Z",
+          "lat": 20.49159,
+          "lon": 87.141385,
+          "speed_knots": 1.7,
+          "heading": 48.2,
+          "course": 48.8
+        }
+      ]
+    }
+  ]
+}

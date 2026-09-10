@@ -1,0 +1,19 @@
+{
+  "location_name": "Arabian Sea near Kochi",
+  "slick_centroid_lat": 9.9,
+  "slick_centroid_lon": 75.6,
+  "acquisition_time": "2026-09-11T09:00:00Z",
+  "satellite": "Sentinel-1A",
+  "mode": "IW",
+  "polarization": "VV",
+  "resolution_m": 10,
+  "region_size_km": 20,
+  "wind_speed_ms": 6.5,
+  "wind_direction_deg": 200,
+  "current_speed_ms": 0.3,
+  "current_direction_deg": 175,
+  "sea_state": "moderate",
+  "wave_height_m": 1.0,
+  "source_wind": "ERA5 Reanalysis",
+  "source_current": "CMEMS Global Ocean Physics"
+}

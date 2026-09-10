@@ -1,179 +1,195 @@
 # 🛢️ MarineGuard — From Slick Detection to Maritime Evidence
 
-> **Smart India Hackathon 2026 | Problem Statement 26143 | NTRO**  
+> **Smart India Hackathon 2026 · Problem Statement 26143 · NTRO**
 > *Leveraging satellite imagery to determine Oil spills at sea along with AIS data correlations to identify vessel responsible for the spill.*
 
-**Team Ocean X**
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.4-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.40-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+
+**Team Ocean X** · SIH 2026
+
+---
+
+## 📖 Table of Contents
+
+1. [Overview](#-overview)
+2. [The MarineGuard Principle](#-the-marineguard-principle)
+3. [System Architecture](#-system-architecture)
+4. [End-to-End Pipeline](#-end-to-end-pipeline)
+5. [The Three ML Models](#-the-three-ml-models)
+6. [Detection Engine — U-Net](#-detection-engine--u-net)
+7. [Drift Engine — Lagrangian Tracking](#-drift-engine--lagrangian-tracking)
+8. [AIS Anomaly Model](#-ais-anomaly-model)
+9. [Attribution Model](#-attribution-model)
+10. [Tech Stack](#-tech-stack)
+11. [Project Structure](#-project-structure)
+12. [Installation](#-installation)
+13. [Quick Start](#-quick-start)
+14. [Model Performance](#-model-performance)
+15. [Datasets](#-datasets)
+16. [Screenshots](#-screenshots)
+17. [Team](#-team)
+18. [License](#-license)
 
 ---
 
 ## 🎯 Overview
 
-MarineGuard is an end-to-end intelligent platform that investigates marine oil spills by combining satellite imagery (Sentinel-1 SAR), environmental data (wind & ocean currents), and historical AIS vessel traffic. The system detects oil slicks, traces them backward to their origin, and identifies the responsible vessel using a transparent, multi-factor attribution scoring system.
+**MarineGuard** is an end-to-end intelligent platform that investigates marine oil spills by fusing **three independent data sources**:
 
-### The MarineGuard Principle
-> *"Finds the vessel that best fits the incident, not just the closest."*
+1. **Sentinel-1 SAR imagery** — detects the physical oil slick on the ocean surface
+2. **Meteorological & oceanographic data** (ERA5 wind + CMEMS currents) — models how the slick drifted
+3. **Historical AIS vessel traffic** — identifies which vessel was in the right place at the right time
 
-We never suspect a vessel based on proximity alone — our Explainable Attribution Score requires multiple corroborating factors for a high-confidence finding.
+The system detects oil slicks, traces them backward to their probable origin, filters thousands of vessels down to a handful of candidates, and produces an **explainable attribution score** for each — replacing black-box accusations with transparent, factor-based evidence.
 
----
+### Why it matters
 
-## 🏗️ Architecture
-
-```
-          Sentinel-1 SAR        ERA5 Wind + CMEMS Currents       Historical AIS Traffic
-                │                         │                              │
-                ▼                         │                              │
-    ┌───────────────────┐                 │                              │
-    │  Detection Engine │                 │                              │
-    │  (U-Net + SAR)    │                 │                              │
-    └────────┬──────────┘                 │                              │
-             ▼                            ▼                              │
-    ┌───────────────────┐    ┌────────────────────┐                      │
-    │  Slick Properties │───▶│    Drift Engine     │                     │
-    │  (loc, area, conf)│    │  (backward track)   │                     │
-    └───────────────────┘    └────────┬───────────┘                      │
-                                     ▼                                   │
-                            ┌────────────────────┐                       │
-                            │  Origin Zone +     │◀──────────────────────┘
-                            │  Time Window       │
-                            └────────┬───────────┘
-                                     ▼
-                            ┌────────────────────┐
-                            │    AIS Engine       │
-                            │  (filter + analyze) │
-                            └────────┬───────────┘
-                                     ▼
-                            ┌────────────────────┐
-                            │ Attribution Engine  │
-                            │ (multi-factor score)│
-                            └────────┬───────────┘
-                                     ▼
-                            ┌────────────────────┐
-                            │  Investigation UI   │
-                            │ (Map + Evidence)    │
-                            └────────────────────┘
-```
+- **Marine oil spills** devastate ecosystems and coastal economies
+- **Over 90% of illegal discharges** go unattributed because satellites rarely capture the polluting act itself
+- **MarineGuard closes that gap** by combining physics-based drift modelling with machine learning attribution
 
 ---
 
-## 🔧 Pipeline
+## 🧭 The MarineGuard Principle
 
-| Step | Engine | Description |
-|------|--------|-------------|
-| **Detect** | Detection Engine | U-Net segmentation on SAR imagery → slick location, area, confidence |
-| **Trace** | Drift Engine | Backward Lagrangian particle tracking → probable origin zone + release window |
-| **Correlate** | AIS Engine | Spatial-temporal vessel filtering + trajectory analysis + AIS gap detection |
-| **Rank** | Attribution Engine | Multi-factor scoring: proximity (30%) + temporal (25%) + trajectory (20%) + AIS gap (15%) + behavioral (10%) |
-| **Explain** | Investigation UI | Interactive map, ranked vessels, forensic timeline, "Why Ranked?" evidence panel |
+> ***"Find the vessel that best fits the incident — not just the closest."***
+
+We never accuse a vessel based on proximity alone. Every attribution requires **multiple corroborating factors**: timing, trajectory, AIS behaviour, and physical consistency with the drift model.
 
 ---
 
-## 🚀 Quick Start
+## 🏗️ System Architecture
 
-### 1. Install Dependencies
+### High-Level Architecture
 
-```bash
-pip install -r requirements.txt
-```
+```mermaid
+graph TB
+    subgraph INPUT["📥 INPUT LAYER"]
+        SAR["🛰️ Sentinel-1 SAR<br/>Image (PNG/TIFF)"]
+        ENV["🌊 Environmental Data<br/>ERA5 Wind + CMEMS Currents"]
+        AIS["🚢 Historical AIS<br/>Vessel Traffic JSON"]
+    end
 
-### 2. Generate Test Data
+    subgraph ML["🧠 ML LAYER"]
+        UNET["U-Net<br/>1.9M params<br/>Oil Slick Segmentation"]
+        ANOM["Random Forest<br/>AIS Anomaly Detection"]
+        ATTR["Gradient Boosting<br/>Attribution Scoring"]
+    end
 
-```bash
-python data/generate_test_data.py
-```
+    subgraph ENGINES["⚙️ PROCESSING LAYER"]
+        DET["Detection Engine<br/>SAR → Slick mask"]
+        DRIFT["Drift Engine<br/>Backward Lagrangian<br/>Particle Tracking"]
+        AISENG["AIS Engine<br/>Spatial-temporal<br/>Filtering + Gap Detection"]
+        ATTRENG["Attribution Engine<br/>Multi-factor<br/>Evidence Scoring"]
+    end
 
-This generates 3 test scenarios:
-- **Major Spill** — Arabian Sea, 15 km², clear single-vessel attribution
-- **No Spill** — Bay of Bengal, false positive (SAR look-alike)
-- **Minor Spill** — Chennai port, 0.8 km², ambiguous multi-candidate attribution
+    subgraph OUTPUT["📤 OUTPUT LAYER"]
+        MAP["🗺️ Interactive Maps"]
+        EVID["📋 Evidence Panel<br/>Why Ranked?"]
+        RANK["📊 Ranked Vessels<br/>Attribution Scores"]
+    end
 
-### 3. Run the Application
+    SAR --> UNET
+    UNET --> DET
+    ENV --> DRIFT
+    DET --> DRIFT
+    DRIFT --> AISENG
+    AIS --> AISENG
+    AISENG --> ANOM
+    ANOM --> ATTRENG
+    DRIFT --> ATTRENG
+    ATTRENG --> ATTR
+    ATTRENG --> RANK
+    ATTRENG --> EVID
+    DET --> MAP
+    DRIFT --> MAP
+    AISENG --> MAP
 
-```bash
-streamlit run app.py
-```
+    style INPUT fill:#1e3a5f,stroke:#4ECDC4,color:#fff
+    style ML fill:#2d1b4e,stroke:#a855f7,color:#fff
+    style ENGINES fill:#1e293b,stroke:#45B7D1,color:#fff
+    style OUTPUT fill:#14532d,stroke:#34C759,color:#fff
+    style UNET fill:#EE4C2C,color:#fff
+    style ANOM fill:#F7931E,color:#fff
+    style ATTR fill:#F7931E,color:#fff
 
-### 4. Investigate
 
-1. Select a test scenario from the sidebar
-2. Click **Run Full Pipeline**
-3. Explore the 5 tabs: Detection → Drift → Map → Attribution → Evidence
+    flowchart LR
+    subgraph S1["1️⃣ DETECT"]
+        A1[Sentinel-1 SAR Image] --> A2[U-Net Segmentation]
+        A2 --> A3[Slick Mask +<br/>Area + Centroid<br/>+ Confidence]
+    end
 
----
+    subgraph S2["2️⃣ TRACE"]
+        A3 --> B1[Backward Lagrangian<br/>Particle Tracking]
+        ENV2[ERA5 Wind<br/>CMEMS Currents] --> B1
+        B1 --> B2[Origin Zone<br/>+ Release Time Window<br/>+ Uncertainty Ellipse]
+    end
 
-## 📁 Project Structure
+    subgraph S3["3️⃣ CORRELATE"]
+        B2 --> C1[Spatial Filter<br/>Radius: 50 km]
+        AIS2[AIS Traffic] --> C1
+        C1 --> C2[Temporal Filter<br/>± 6 h]
+        C2 --> C3[Trajectory Analysis<br/>+ AIS Gap Detection]
+        C3 --> C4[Random Forest<br/>Anomaly Scoring]
+    end
 
-```
-MarineGuard/
-├── app.py                              # Streamlit Investigation UI
-├── config.py                           # Global configuration & constants
-├── requirements.txt                    # Python dependencies
-├── README.md                           # This file
-│
-├── engines/                            # Core pipeline engines
-│   ├── detection_engine.py             # SAR + U-Net → slick detection
-│   ├── drift_engine.py                 # Backward drift → origin zone
-│   ├── ais_engine.py                   # AIS filtering + trajectory
-│   └── attribution_engine.py           # Multi-factor scoring + ranking
-│
-├── models/                             # AI model definitions
-│   └── unet.py                         # U-Net architecture
-│
-├── utils/                              # Utility modules
-│   ├── geo_utils.py                    # Geospatial functions
-│   ├── visualization.py                # Map & chart generation
-│   └── data_loader.py                  # Data loading + dataclasses
-│
-└── data/                               # Test data
-    ├── generate_test_data.py           # Scenario generator
-    └── test_scenarios/                 # Generated JSON scenarios
-        ├── scenario_major_spill.json
-        ├── scenario_no_spill.json
-        └── scenario_minor_spill.json
-```
+    subgraph S4["4️⃣ RANK"]
+        C4 --> D1[Factor Scoring]
+        B2 --> D1
+        D1 --> D2[Proximity 30%<br/>Temporal 25%<br/>Trajectory 20%<br/>AIS Gap 15%<br/>Behavioral 10%]
+        D2 --> D3[Gradient Boosting<br/>Attribution Model]
+    end
 
----
+    subgraph S5["5️⃣ EXPLAIN"]
+        D3 --> E1[Ranked Vessels]
+        D3 --> E2[Evidence Panel]
+        D3 --> E3[Interactive Map]
+    end
 
-## ⚖️ Attribution Scoring
+    style S1 fill:#0f172a,stroke:#FF6B35,color:#fff
+    style S2 fill:#0f172a,stroke:#45B7D1,color:#fff
+    style S3 fill:#0f172a,stroke:#FF9500,color:#fff
+    style S4 fill:#0f172a,stroke:#a855f7,color:#fff
+    style S5 fill:#0f172a,stroke:#34C759,color:#fff
 
-Our Explainable Attribution Score replaces black-box probabilities with transparent, factor-based metrics:
+    sequenceDiagram
+    autonumber
+    participant U as 👤 User
+    participant A as 🖥️ Streamlit UI
+    participant D as 📡 Detection Engine
+    participant W as 🌊 Drift Engine
+    participant S as 🚢 AIS Engine
+    participant R as 📊 Attribution Engine
 
-| Factor | Weight | Description |
-|--------|--------|-------------|
-| **Proximity** | 30% | Distance from vessel to estimated origin zone |
-| **Temporal** | 25% | Alignment of vessel presence with release time window |
-| **Trajectory** | 20% | Course/heading alignment with reverse drift path |
-| **AIS Gap** | 15% | Suspicious transponder shutdown periods |
-| **Behavioral** | 10% | Speed changes, loitering, course deviations |
+    U->>A: Upload SAR + Env + AIS
+    A->>A: Validate 3-input set
+    A->>D: Run detection
+    D->>D: U-Net inference
+    D-->>A: Slick mask + confidence + area
 
----
+    alt Spill Detected
+        A->>W: Trace origin
+        W->>W: Backward Lagrangian tracking
+        W->>W: Compute uncertainty zone
+        W-->>A: Origin + release window
 
-## 🛡️ Innovation
+        A->>S: Correlate vessels
+        S->>S: Spatial filter (50 km radius)
+        S->>S: Temporal filter (± 6 h)
+        S->>S: Trajectory + AIS gap analysis
+        S->>S: ML anomaly scoring
+        S-->>A: Ranked vessel candidates
 
-- **Explainable Attribution Score** — No single-factor accusations
-- **Uncertainty-Aware Origin Zone** — Realistic probable area, not a single point
-- **Forensic Timeline** — Links slick detection → drift → vessel activity
-- **Layered Evidence Map** — All data layers in one unified interface
-- **"Why Ranked?" Panel** — Human-readable evidence for each factor
+        A->>R: Attribute
+        R->>R: Score 5 factors per vessel
+        R->>R: Gradient Boosting model
+        R-->>A: Attribution scores + evidence
 
----
-
-## 🧰 Technology Stack
-
-| Category | Tools |
-|----------|-------|
-| **Satellite Data** | Sentinel-1 SAR |
-| **Environmental** | ERA5 (wind), CMEMS (currents), Copernicus |
-| **AI/ML** | U-Net (PyTorch), Segmentation |
-| **Drift Modeling** | Lagrangian particle tracking (OpenDrift-inspired) |
-| **Geospatial** | GeoPandas, Shapely, Rasterio |
-| **Visualization** | Folium, Plotly |
-| **Frontend** | Streamlit |
-| **Backend** | Python, NumPy, Pandas |
-
----
-
-## 📜 License
-
-Built for Smart India Hackathon 2026 — Team Ocean X
+        A-->>U: Show maps + ranked vessels + evidence
+    else No Spill
+        A-->>U: Show false-positive explanation
+    end
